@@ -1,0 +1,26 @@
+CREATE TABLE aluno ( Matricula int PRIMARY KEY auto_increment, Nome  varchar(50), Telefone Varchar(11), UF Varchar(2), Email varchar(20));
+CREATE TABLE turma ( Codigo_Turma Int PRIMARY KEY, Data_Inicio Date, Data_Fim Date, Codigo_curso Int, Codigo_instrutor Int );
+CREATE TABLE instrutores ( Codigo_instrutor Int PRIMARY KEY, Nome Varchar(50), Telefone Varchar(11), Data_Admissao Date, Email Varchar(20) );
+CREATE TABLE historico ( Codigo_historico Int PRIMARY KEY, Nota float, Frequencia int(4), Codigo_Turma Int, Matricula int, FOREIGN KEY(Codigo_Turma) REFERENCES TURMA (Codigo_Turma), FOREIGN KEY(Matricula) REFERENCES ALUNO (Matricula));
+CREATE TABLE cursos ( Codigo_curso Int PRIMARY KEY, Nome Varchar(20), Carga_Horaria Int(4), Preco Float, Pre_Requisito Varchar(100));
+ALTER TABLE TURMA ADD FOREIGN KEY(Codigo_curso) REFERENCES CURSOS (Codigo_curso)
+ALTER TABLE TURMA ADD FOREIGN KEY(Codigo_instrutor) REFERENCES INSTRUTORES (Codigo_instrutor)
+insert into aluno values(null, 'Mateus', '21598746321', 'QR', 'mase@email.com');
+insert into aluno values(null, 'Lucas', '21487963147', 'WR', 'luse@email.com');
+insert into aluno values(null, 'Mariah', '21440963147', 'ER', 'mhse@email.com');
+insert into aluno values(null, 'Isaac', '21940963147', 'RR', 'isse@email.com');
+insert into aluno values(null, 'Joao Pedro', '21940463177', 'TR', 'jpse@email.com');
+insert into aluno values(null, 'Eduardo', '21928463177', 'YR', 'edse@email.com');
+insert into aluno values(null, 'Amanda', '21926463157', 'UR', 'amse@email.com');
+insert into aluno values(null, 'Daniel', '22826463157', 'IR', 'dase@email.com');
+insert into aluno values(null, 'Joao Marcelo', '2282642157', 'OR', 'jmse@email.com');
+insert into aluno values(null, 'Pedro Santos', '2281642197', 'PR', 'psse@email.com');
+
+insert into cursos values(1001, 'mangahigh', 180, 600.00, null);
+insert into cursos values(1002, 'TI', 200, 600.00, 'ensino medio');
+
+insert into instrutores values(952, 'Nilson', '21958746321','2014-01-26',null);
+insert into instrutores values(953, 'Heusa', '21958746347','2014-02-26','hase@email.com');
+insert into instrutores values(954, 'Elaine', '21978746347','2014-02-12','else@email.com');
+insert into instrutores values(955, 'Giovanni', '21978046347','2014-01-02','gise@email.com');
+
