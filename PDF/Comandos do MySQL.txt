@@ -1,0 +1,48 @@
+"show databases;" Mostrar os bancos de dados existentes
+
+"use "NomeDoBanco";" Acessar um banco de dados
+
+"status;" ver os status.
+
+"create database "nome do banco";" criar um banco de dados.
+
+"drop database "nome do banco";" apaga o banco de dados.
+
+"create table aluno (matricula int(5) primary key, nome varchar(100), telefone char(15));"  cria uma tabela
+
+"show tables;" mostra as tabelas do banco acessado
+
+"describe aluno [coluna];" descreve a tabela. (desc tambem serve)
+
+"select * from 'nome da tabela';" mostra os dados cradastrados da tabela
+
+SELECT * FROM cliente;
+SELECT NOME, TELEFONE FROM cliente;
+SELECT TELEFONE, NOME FROM cliente;
+SELECT NOME, EMAIL FROM cliente WHERE
+MATRICULA = 5;
+SELECT NOME, NASCIMENTO FROM cliente
+ORDER BY NOME;
+SELECT NOME, MATRICULA, TELEFONE FROM cliente
+ORDER BY NOME DESC;
+
+SELECT NOME, NASCIMENTO FROM cliente ORDER BY
+NASCIMENTO, NOME DESC;
+SELECT NOME FROM cliente WHERE NASCIMENTO = ‘ddd’
+ORDER BY NOME;
+SELECT NOME, TELEFONE FROM cliente WHERE NOME =
+‘nnn’ ORDER BY MATRICULA DESC;
+SELECT DISTINCT NOME FROM cliente;
+SELECT DISTINCT NOME, TELEFONE FROM cliente;
+SELECT MATRICULA, NOME FROM CLIENTE WHERE TELEFONE
+= ‘ttt’ ORDER BY NASCIMENTO;
+
+SELECT NOME, NASCIMENTO FROM cliente WHERE
+MONTH(NASCIMENTO) = 12;
+
+SELECT NOME, NASCIMENTO FROM cliente WHERE
+NASCIMENTO >= ‘2000-01-01’;
+
+UPDATE <tabela> SET <campo> = <expressão> [condição];
+
+DELETE FROM <tabela> [condição];

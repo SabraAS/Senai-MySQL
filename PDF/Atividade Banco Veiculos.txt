@@ -1,0 +1,35 @@
+Exercício:
+No BD Veículos (aula passada), cadastrar:
+Fabricantes:
+- VW
+- FIAT
+- FORD
+- CHEVROLET
+
+Cor:
+- Preto
+- Branco
+- Prata
+- Vermelho
+- Azul
+
+Veículo
+
+- Uno (fiat / vermelho)
+- Palio (fiat / Prata)
+- Fiesta ( ford / branco)
+- Focus ( ford / Preto)
+- Gol ( VW / Vermelho )
+- Saveiro ( VW / Branco )
+- Onix ( Chevrolet / Prata )
+- Cobalt ( Chevrolet / Azul )
+- Fox ( VW / Preto)
+- Siena ( Fiat / Branco)
+- Ecosport ( Ford / Vermelho )
+- Vectra ( Chevrolet / Azul )
+
+Responsável 
+
+1 responsável para cada carro
+Cada responsável com 2 telefones
+Cada resposnável com 1 endereço, sendo 1 resposnável com endereço de trabalho também 

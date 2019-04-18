@@ -1,0 +1,28 @@
+mysql> insert into banco values(1, 'Banco do Brasil');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into banco values(4, 'CEF');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into agencia values(0562, 'Rua Joaquim Teixeira Alves, 1
+555', 4);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into agencia values(3153, 'Av. Marcelino Pires, 1960', 1
+);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into cliente values('111.222.333-44', 'Jennifer B Souza'
+, 'F', 'Rua Cuiabá, 1050');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into cliente values('666.777.888-99', 'Caetano K Lima',
+'M', 'Rua Ivinhema, 879');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into cliente values('555.444.777-33', 'Silvia Macedo', '
+F', 'Rua Estados Unidos, 735');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into conta values('86340-2', 763.05, 2, 3153);
+Query OK, 1 row affected (0.17 sec)

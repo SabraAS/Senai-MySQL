@@ -1,0 +1,12 @@
+Números:
+	Int -> até 10 caracteres Int(10)
+
+Decimais:
+	Decimal(10,2) 10 caracteres com 2 depois da virgula
+
+Texto:
+	Char e Varchar até 255 caracteres
+	Char todos tem o mesmo tamanho e varchar tamanhos variados 
+
+Data:
+	Date
